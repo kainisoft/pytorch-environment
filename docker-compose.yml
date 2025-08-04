@@ -1,0 +1,38 @@
+services:
+  pytorch-jupyter:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: pytorch-learning-env
+    ports:
+      - "8888:8888" # Jupyter notebook port
+      - "6006:6006" # TensorBoard port (optional)
+    volumes:
+      - ./notebooks:/workspace/notebooks
+      - ./data:/workspace/data
+      - ./models:/workspace/models
+      - ./scripts:/workspace/scripts
+    environment:
+      - JUPYTER_ENABLE_LAB=yes
+      - JUPYTER_TOKEN=pytorch-learning # Set a custom token for security
+    working_dir: /workspace
+    command: >
+      bash -c "
+        jupyter lab --ip=0.0.0.0 --port=8888 --no-browser --allow-root 
+        --NotebookApp.token='pytorch-learning' 
+        --NotebookApp.password='' 
+        --NotebookApp.allow_origin='*'
+      "
+    restart: unless-stopped
+    # Uncomment the following lines if you have an NVIDIA GPU and want GPU support
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           count: 1
+    #           capabilities: [gpu]
+
+networks:
+  default:
+    name: pytorch-network
