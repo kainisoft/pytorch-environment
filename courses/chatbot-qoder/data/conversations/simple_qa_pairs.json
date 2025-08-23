@@ -1,0 +1,212 @@
+[
+  {
+    "id": 1,
+    "query": "Hello, how are you?",
+    "response": "Hello! I'm doing well, thank you for asking. How can I help you today?",
+    "intent": "greeting",
+    "context": ""
+  },
+  {
+    "id": 2,
+    "query": "What's your name?",
+    "response": "I'm a helpful chatbot designed to assist you with various questions and tasks.",
+    "intent": "identity",
+    "context": ""
+  },
+  {
+    "id": 3,
+    "query": "How does machine learning work?",
+    "response": "Machine learning involves training algorithms on data to recognize patterns and make predictions or decisions without being explicitly programmed for each task.",
+    "intent": "technical_question",
+    "context": "AI/ML"
+  },
+  {
+    "id": 4,
+    "query": "Can you help me with Python programming?",
+    "response": "Of course! I'd be happy to help with Python programming. What specific aspect would you like assistance with?",
+    "intent": "programming_help",
+    "context": "programming"
+  },
+  {
+    "id": 5,
+    "query": "What is PyTorch?",
+    "response": "PyTorch is an open-source machine learning library for Python that provides tensor computations with GPU acceleration and deep neural networks built on autograd.",
+    "intent": "technical_question",
+    "context": "AI/ML"
+  },
+  {
+    "id": 6,
+    "query": "Thank you for your help",
+    "response": "You're very welcome! I'm glad I could help. Feel free to ask if you have any more questions.",
+    "intent": "gratitude",
+    "context": ""
+  },
+  {
+    "id": 7,
+    "query": "Goodbye",
+    "response": "Goodbye! Have a wonderful day, and don't hesitate to come back if you need any assistance.",
+    "intent": "farewell",
+    "context": ""
+  },
+  {
+    "id": 8,
+    "query": "What is deep learning?",
+    "response": "Deep learning is a subset of machine learning that uses neural networks with multiple layers to learn complex patterns in data, mimicking how the human brain processes information.",
+    "intent": "technical_question",
+    "context": "AI/ML"
+  },
+  {
+    "id": 9,
+    "query": "How do I start learning programming?",
+    "response": "To start learning programming, I recommend choosing a beginner-friendly language like Python, finding online tutorials or courses, practicing with small projects, and gradually building more complex applications.",
+    "intent": "learning_advice",
+    "context": "programming"
+  },
+  {
+    "id": 10,
+    "query": "What are neural networks?",
+    "response": "Neural networks are computing systems inspired by biological neural networks. They consist of interconnected nodes (neurons) that process information through weighted connections and activation functions.",
+    "intent": "technical_question",
+    "context": "AI/ML"
+  },
+  {
+    "id": 11,
+    "query": "I need help debugging my code",
+    "response": "I'd be happy to help you debug your code! Please share the code snippet and describe what error or unexpected behavior you're encountering.",
+    "intent": "programming_help",
+    "context": "programming"
+  },
+  {
+    "id": 12,
+    "query": "What is natural language processing?",
+    "response": "Natural Language Processing (NLP) is a field of AI that focuses on enabling computers to understand, interpret, and generate human language in a valuable way.",
+    "intent": "technical_question",
+    "context": "AI/ML"
+  },
+  {
+    "id": 13,
+    "query": "How are you doing today?",
+    "response": "I'm doing great, thank you for asking! I'm ready to help you with any questions or tasks you might have.",
+    "intent": "greeting",
+    "context": ""
+  },
+  {
+    "id": 14,
+    "query": "Can you explain tensors?",
+    "response": "Tensors are multi-dimensional arrays that generalize scalars, vectors, and matrices. In machine learning, they're fundamental data structures used to represent and manipulate data.",
+    "intent": "technical_question",
+    "context": "AI/ML"
+  },
+  {
+    "id": 15,
+    "query": "What programming languages should I learn?",
+    "response": "For beginners, I recommend starting with Python due to its readability and versatility. Depending on your goals, you might also consider JavaScript for web development, Java for enterprise applications, or C++ for system programming.",
+    "intent": "learning_advice",
+    "context": "programming"
+  },
+  {
+    "id": 16,
+    "query": "How do chatbots work?",
+    "response": "Chatbots work by processing user input, understanding the intent, and generating appropriate responses. They can use rule-based systems, machine learning models, or hybrid approaches to understand and respond to human language.",
+    "intent": "technical_question",
+    "context": "AI/ML"
+  },
+  {
+    "id": 17,
+    "query": "I'm confused about loops in programming",
+    "response": "Loops are control structures that repeat a block of code. Common types include 'for' loops (iterate a specific number of times) and 'while' loops (continue until a condition is false). Would you like me to explain a specific type?",
+    "intent": "programming_help",
+    "context": "programming"
+  },
+  {
+    "id": 18,
+    "query": "What is the difference between AI and ML?",
+    "response": "AI (Artificial Intelligence) is the broader concept of machines performing tasks that typically require human intelligence. ML (Machine Learning) is a subset of AI that focuses on algorithms that can learn and improve from data without explicit programming.",
+    "intent": "technical_question",
+    "context": "AI/ML"
+  },
+  {
+    "id": 19,
+    "query": "How can I improve my coding skills?",
+    "response": "To improve coding skills: practice regularly with coding challenges, work on personal projects, read others' code, contribute to open source, learn new programming paradigms, and focus on understanding algorithms and data structures.",
+    "intent": "learning_advice",
+    "context": "programming"
+  },
+  {
+    "id": 20,
+    "query": "What is supervised learning?",
+    "response": "Supervised learning is a machine learning approach where models are trained on labeled datasets. The algorithm learns to map inputs to correct outputs by finding patterns in the training data with known answers.",
+    "intent": "technical_question",
+    "context": "AI/ML"
+  },
+  {
+    "id": 21,
+    "query": "Nice to meet you",
+    "response": "Nice to meet you too! I'm excited to help you learn and explore. What would you like to know about today?",
+    "intent": "greeting",
+    "context": ""
+  },
+  {
+    "id": 22,
+    "query": "Can you recommend learning resources?",
+    "response": "Certainly! For programming: Codecademy, freeCodeCamp, and LeetCode. For AI/ML: Coursera's ML course, Kaggle Learn, and PyTorch tutorials. For general computer science: Khan Academy and MIT OpenCourseWare.",
+    "intent": "learning_advice",
+    "context": "general"
+  },
+  {
+    "id": 23,
+    "query": "What is a function in programming?",
+    "response": "A function is a reusable block of code that performs a specific task. It can take inputs (parameters), process them, and return outputs. Functions help organize code, reduce repetition, and make programs more modular.",
+    "intent": "programming_help",
+    "context": "programming"
+  },
+  {
+    "id": 24,
+    "query": "How do I handle errors in code?",
+    "response": "Error handling involves anticipating and managing exceptions that might occur during program execution. Use try-catch blocks, validate inputs, provide meaningful error messages, and implement graceful fallbacks when possible.",
+    "intent": "programming_help",
+    "context": "programming"
+  },
+  {
+    "id": 25,
+    "query": "What is reinforcement learning?",
+    "response": "Reinforcement learning is a type of machine learning where an agent learns to make decisions by taking actions in an environment and receiving rewards or penalties. The goal is to maximize cumulative reward over time.",
+    "intent": "technical_question",
+    "context": "AI/ML"
+  },
+  {
+    "id": 26,
+    "query": "I'm interested in data science",
+    "response": "Data science is a fascinating field! It combines statistics, programming, and domain expertise to extract insights from data. Key skills include Python/R programming, statistics, data visualization, and machine learning.",
+    "intent": "learning_advice",
+    "context": "data_science"
+  },
+  {
+    "id": 27,
+    "query": "What are hyperparameters?",
+    "response": "Hyperparameters are configuration settings for machine learning algorithms that are set before training begins. Examples include learning rate, batch size, and number of hidden layers. They control how the model learns but aren't learned from data.",
+    "intent": "technical_question",
+    "context": "AI/ML"
+  },
+  {
+    "id": 28,
+    "query": "How do I choose a programming project?",
+    "response": "Choose projects that interest you and match your skill level. Start small, pick something you'll use, consider problems you want to solve, and gradually increase complexity. Portfolio projects should demonstrate different skills.",
+    "intent": "learning_advice",
+    "context": "programming"
+  },
+  {
+    "id": 29,
+    "query": "What is gradient descent?",
+    "response": "Gradient descent is an optimization algorithm used to minimize a function by iteratively moving toward the steepest descent direction. In machine learning, it's used to minimize loss functions and train neural networks.",
+    "intent": "technical_question",
+    "context": "AI/ML"
+  },
+  {
+    "id": 30,
+    "query": "Thank you, this was helpful",
+    "response": "I'm so glad I could help! Learning new concepts can be challenging, but you're doing great. Keep up the excellent work and feel free to ask more questions anytime.",
+    "intent": "gratitude",
+    "context": ""
+  }
+]

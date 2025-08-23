@@ -1,7 +1,6 @@
-# Use the official PyTorch image with CUDA support (or CPU-only version)
-# For GPU support, use: pytorch/pytorch:2.1.0-cuda11.8-cudnn8-devel
-# For CPU-only, use: pytorch/pytorch:2.1.0-cuda11.8-cudnn8-runtime or pytorch/pytorch:latest
-FROM pytorch/pytorch:2.1.0-cuda11.8-cudnn8-runtime
+# Use Python base image and install PyTorch manually for Apple Silicon compatibility
+# This ensures we get ARM64 native performance and MPS support
+FROM python:3.11-slim
 
 # Set the working directory
 WORKDIR /workspace
@@ -16,6 +15,14 @@ RUN apt-get update && apt-get install -y \
     build-essential \
     && rm -rf /var/lib/apt/lists/*
 
+# Install PyTorch with MPS support for Apple Silicon
+# Using the nightly build which has better Apple Silicon support
+RUN pip install --no-cache-dir \
+    torch \
+    torchvision \
+    torchaudio \
+    torchmetrics
+
 # Install Python packages for data science and machine learning
 # Note: NumPy version pinned to <2.0 for PyTorch 2.1.0 compatibility
 # OpenCV version constrained to avoid NumPy 2.x compatibility issues
@@ -27,6 +34,7 @@ RUN pip install --no-cache-dir \
     "numpy<2.0" \
     pandas \
     matplotlib \
+    mlxtend \
     seaborn \
     plotly \
     scikit-learn \
@@ -34,8 +42,6 @@ RUN pip install --no-cache-dir \
     Pillow \
     tqdm \
     tensorboard \
-    torchvision \
-    torchaudio \
     transformers \
     datasets \
     accelerate \
@@ -58,7 +64,7 @@ RUN pip install --no-cache-dir \
     streamlit
 
 # Create directories for mounting volumes
-RUN mkdir -p /workspace/notebooks /workspace/data /workspace/models /workspace/scripts
+RUN mkdir -p /workspace/features
 
 # Set up Jupyter configuration
 RUN jupyter lab --generate-config

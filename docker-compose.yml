@@ -8,30 +8,21 @@ services:
       - "8888:8888" # Jupyter notebook port
       - "6006:6006" # TensorBoard port (optional)
     volumes:
-      - ./notebooks:/workspace/notebooks
-      - ./data:/workspace/data
-      - ./models:/workspace/models
-      - ./scripts:/workspace/scripts
+      # Mount the entire features directory - automatically includes all feature subdirectories
+      - ./features:/workspace/features
+      # Jupyter configuration
+      - ./jupyter_server_config.py:/root/.jupyter/jupyter_server_config.py
     environment:
       - JUPYTER_ENABLE_LAB=yes
-      - JUPYTER_TOKEN=pytorch-learning # Set a custom token for security
     working_dir: /workspace
     command: >
       bash -c "
-        jupyter lab --ip=0.0.0.0 --port=8888 --no-browser --allow-root 
-        --NotebookApp.token='pytorch-learning' 
-        --NotebookApp.password='' 
-        --NotebookApp.allow_origin='*'
+        jupyter lab --config=/root/.jupyter/jupyter_server_config.py
       "
     restart: unless-stopped
-    # Uncomment the following lines if you have an NVIDIA GPU and want GPU support
-    # deploy:
-    #   resources:
-    #     reservations:
-    #       devices:
-    #         - driver: nvidia
-    #           count: 1
-    #           capabilities: [gpu]
+    # Note: NVIDIA GPU support is not available on Apple Silicon (M1/M2/M3)
+    # Apple Silicon uses MPS (Metal Performance Shaders) for GPU acceleration
+    # MPS support is built into PyTorch and doesn't require special Docker configuration
 
 networks:
   default:

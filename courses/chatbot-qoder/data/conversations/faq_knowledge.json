@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "question": "What is machine learning?",
+    "answer": "Machine learning is a subset of artificial intelligence (AI) that focuses on the development of algorithms and statistical models that enable computer systems to improve their performance on a specific task through experience, without being explicitly programmed.",
+    "category": "AI/ML Basics",
+    "keywords": ["machine learning", "AI", "algorithms", "artificial intelligence", "ML"],
+    "confidence": 0.95
+  },
+  {
+    "id": 2,
+    "question": "How do neural networks work?",
+    "answer": "Neural networks are computing systems inspired by biological neural networks. They consist of interconnected nodes (neurons) organized in layers. Each connection has a weight, and neurons apply activation functions to weighted inputs to produce outputs. The network learns by adjusting these weights through training.",
+    "category": "Deep Learning",
+    "keywords": ["neural networks", "neurons", "weights", "activation functions", "deep learning"],
+    "confidence": 0.92
+  },
+  {
+    "id": 3,
+    "question": "What is PyTorch?",
+    "answer": "PyTorch is an open-source machine learning library for Python developed by Facebook's AI Research lab. It provides tensor computations with strong GPU acceleration and deep neural networks built on a tape-based autograd system. It's known for its dynamic computational graphs and ease of use.",
+    "category": "Frameworks",
+    "keywords": ["PyTorch", "machine learning", "Python", "tensors", "autograd", "Facebook"],
+    "confidence": 0.98
+  },
+  {
+    "id": 4,
+    "question": "What is natural language processing?",
+    "answer": "Natural Language Processing (NLP) is a field of artificial intelligence that focuses on the interaction between computers and human language. It involves enabling computers to understand, interpret, and generate human language in a valuable way, including tasks like text analysis, translation, and sentiment analysis.",
+    "category": "NLP",
+    "keywords": ["NLP", "natural language processing", "text analysis", "language understanding", "AI"],
+    "confidence": 0.94
+  },
+  {
+    "id": 5,
+    "question": "How do I start learning programming?",
+    "answer": "To start learning programming: 1) Choose a beginner-friendly language like Python, 2) Find quality online resources (tutorials, courses, books), 3) Practice with small projects, 4) Join coding communities, 5) Build progressively complex projects, 6) Don't be afraid to make mistakes and debug code.",
+    "category": "Learning",
+    "keywords": ["programming", "learning", "Python", "beginner", "coding", "practice"],
+    "confidence": 0.90
+  },
+  {
+    "id": 6,
+    "question": "What are tensors in deep learning?",
+    "answer": "Tensors are multi-dimensional arrays that generalize scalars (0D), vectors (1D), and matrices (2D) to higher dimensions. In deep learning, tensors are the fundamental data structure used to represent inputs, outputs, and model parameters. They enable efficient mathematical operations on large datasets.",
+    "category": "Deep Learning",
+    "keywords": ["tensors", "arrays", "deep learning", "data structure", "mathematics"],
+    "confidence": 0.93
+  },
+  {
+    "id": 7,
+    "question": "What is supervised learning?",
+    "answer": "Supervised learning is a machine learning paradigm where models are trained on labeled datasets. The algorithm learns to map inputs to correct outputs by finding patterns in training data that includes both input features and known target values. Examples include classification and regression tasks.",
+    "category": "AI/ML Basics",
+    "keywords": ["supervised learning", "labeled data", "classification", "regression", "training"],
+    "confidence": 0.96
+  },
+  {
+    "id": 8,
+    "question": "How do chatbots understand language?",
+    "answer": "Chatbots understand language through various techniques: 1) Tokenization (breaking text into words/tokens), 2) Intent recognition (identifying user goals), 3) Entity extraction (finding key information), 4) Context understanding (maintaining conversation state), and 5) Response generation using rule-based systems or neural networks.",
+    "category": "Chatbots",
+    "keywords": ["chatbots", "language understanding", "tokenization", "intent recognition", "NLP"],
+    "confidence": 0.91
+  },
+  {
+    "id": 9,
+    "question": "What is the difference between AI and ML?",
+    "answer": "AI (Artificial Intelligence) is the broader concept of machines being able to carry out tasks in a way that we would consider 'smart'. ML (Machine Learning) is a subset of AI that focuses on the idea that machines can learn from data, identify patterns, and make decisions with minimal human intervention.",
+    "category": "AI/ML Basics",
+    "keywords": ["AI", "ML", "artificial intelligence", "machine learning", "difference"],
+    "confidence": 0.97
+  },
+  {
+    "id": 10,
+    "question": "What is deep learning?",
+    "answer": "Deep learning is a subset of machine learning that uses neural networks with multiple hidden layers (typically 3 or more) to model and understand complex patterns in data. It's particularly effective for tasks like image recognition, natural language processing, and speech recognition.",
+    "category": "Deep Learning",
+    "keywords": ["deep learning", "neural networks", "multiple layers", "image recognition", "NLP"],
+    "confidence": 0.95
+  },
+  {
+    "id": 11,
+    "question": "How do I debug my code effectively?",
+    "answer": "Effective debugging strategies: 1) Read error messages carefully, 2) Use print statements or debugger tools, 3) Check your assumptions, 4) Isolate the problem by testing small code sections, 5) Use version control to compare working vs broken code, 6) Take breaks and explain the problem to others (rubber duck debugging).",
+    "category": "Programming",
+    "keywords": ["debugging", "error messages", "troubleshooting", "programming", "code"],
+    "confidence": 0.88
+  },
+  {
+    "id": 12,
+    "question": "What is gradient descent?",
+    "answer": "Gradient descent is an optimization algorithm used to minimize a function by iteratively moving in the direction of steepest descent as defined by the negative of the gradient. In machine learning, it's used to minimize loss functions and find optimal model parameters.",
+    "category": "Optimization",
+    "keywords": ["gradient descent", "optimization", "loss function", "parameters", "algorithm"],
+    "confidence": 0.94
+  },
+  {
+    "id": 13,
+    "question": "What programming languages should I learn?",
+    "answer": "For beginners: Python (versatile, easy to learn), JavaScript (web development). For specific goals: Java (enterprise applications), C++ (system programming, performance-critical applications), R (statistics and data analysis), Swift (iOS development), Kotlin (Android development). Choose based on your interests and career goals.",
+    "category": "Programming",
+    "keywords": ["programming languages", "Python", "JavaScript", "Java", "learning"],
+    "confidence": 0.89
+  },
+  {
+    "id": 14,
+    "question": "What is reinforcement learning?",
+    "answer": "Reinforcement learning is a type of machine learning where an agent learns to make decisions by taking actions in an environment and receiving rewards or penalties. The goal is to learn a policy that maximizes cumulative reward over time. It's used in game playing, robotics, and autonomous systems.",
+    "category": "AI/ML Basics",
+    "keywords": ["reinforcement learning", "agent", "environment", "rewards", "policy"],
+    "confidence": 0.93
+  },
+  {
+    "id": 15,
+    "question": "How do I improve my coding skills?",
+    "answer": "To improve coding skills: 1) Practice regularly with coding challenges, 2) Work on personal projects, 3) Read and analyze others' code, 4) Contribute to open source projects, 5) Learn new programming paradigms, 6) Focus on algorithms and data structures, 7) Get code reviews from experienced developers.",
+    "category": "Learning",
+    "keywords": ["coding skills", "practice", "projects", "open source", "algorithms"],
+    "confidence": 0.87
+  },
+  {
+    "id": 16,
+    "question": "What are hyperparameters in machine learning?",
+    "answer": "Hyperparameters are configuration settings for machine learning algorithms that are set before training begins and are not learned from the data. Examples include learning rate, batch size, number of hidden layers, and regularization strength. They significantly impact model performance and require tuning.",
+    "category": "AI/ML Basics",
+    "keywords": ["hyperparameters", "configuration", "learning rate", "batch size", "tuning"],
+    "confidence": 0.91
+  },
+  {
+    "id": 17,
+    "question": "What is data science?",
+    "answer": "Data science is an interdisciplinary field that combines statistics, programming, and domain expertise to extract insights and knowledge from data. It involves data collection, cleaning, analysis, visualization, and modeling to solve real-world problems and support decision-making.",
+    "category": "Data Science",
+    "keywords": ["data science", "statistics", "programming", "data analysis", "insights"],
+    "confidence": 0.92
+  },
+  {
+    "id": 18,
+    "question": "How do I choose a programming project?",
+    "answer": "Choose programming projects by: 1) Matching your current skill level, 2) Picking topics that interest you, 3) Solving problems you actually face, 4) Building something you'll use, 5) Gradually increasing complexity, 6) Considering portfolio value, 7) Looking for learning opportunities in new technologies.",
+    "category": "Learning",
+    "keywords": ["programming projects", "skill level", "portfolio", "learning", "complexity"],
+    "confidence": 0.86
+  },
+  {
+    "id": 19,
+    "question": "What is transfer learning?",
+    "answer": "Transfer learning is a machine learning technique where a model developed for one task is reused as the starting point for a model on a related task. It's particularly useful when you have limited data for your target task but can leverage knowledge from a pre-trained model on a similar, larger dataset.",
+    "category": "Deep Learning",
+    "keywords": ["transfer learning", "pre-trained models", "reuse", "limited data", "fine-tuning"],
+    "confidence": 0.90
+  },
+  {
+    "id": 20,
+    "question": "What are APIs in programming?",
+    "answer": "APIs (Application Programming Interfaces) are sets of protocols, routines, and tools that allow different software applications to communicate with each other. They define how software components should interact, enabling developers to use functionality from other applications or services without knowing their internal implementation.",
+    "category": "Programming",
+    "keywords": ["API", "programming interface", "communication", "protocols", "integration"],
+    "confidence": 0.89
+  }
+]
