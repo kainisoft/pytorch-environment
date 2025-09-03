@@ -1,0 +1,49 @@
+version: '3.8'
+
+services:
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - REACT_APP_API_URL=http://localhost:8000
+      - REACT_APP_WS_URL=ws://localhost:8000
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    depends_on:
+      - backend
+    networks:
+      - chatbot-network
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=sqlite:///./data/chatbot.db
+      - MODEL_PATH=/app/models
+      - MAX_CONTEXT_LENGTH=2048
+      - DEVICE=cpu
+      - DEBUG=true
+      - LOG_LEVEL=info
+      - RELOAD=true
+    volumes:
+      - ./backend:/app
+      - ./shared/models:/app/models
+      - ./shared/data:/app/data
+    networks:
+      - chatbot-network
+
+networks:
+  chatbot-network:
+    driver: bridge
+
+volumes:
+  node_modules:
+  models:
+  data:
